@@ -1,0 +1,46 @@
+# Redrob Hackathon — Submission Metadata
+# Auto-generated for Team DevFusion
+
+team_name: "DevFusion"
+
+primary_contact:
+  name: "Sanjana Gangishetty"
+  email: "sanjana@example.com"
+  phone: "+91-9876543210"
+
+team_members:
+  - name: "Sanjana Gangishetty"
+    email: "sanjana@example.com"
+    role: "Team Lead & ML Engineer"
+
+github_repo: "https://github.com/sanjanagangishetty21/redrob-candidate-ranker"
+sandbox_link: "https://huggingface.co/spaces/devfusion-ai/redrob-ranker"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./DevFusion.csv"
+
+compute:
+  platform: "Local Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.7.0"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Gemini"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Gemini for coding assistance, refactoring, and logic verification. No candidate data was sent to external APIs.
+
+methodology_summary: |
+  Rule-based scoring pipeline with strict programmatically defined honeypot filters (catching signup/active date contradictions, inverted expected salaries, and skill/YoE mismatches). Features include product company history checks, years of experience scoring alignment (targeting 5-9 years), location proximity, notice period, and active user modifiers (last active and response rate). Tie-breakers resolved deterministically using candidate ID ascending, ensuring robust precision.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

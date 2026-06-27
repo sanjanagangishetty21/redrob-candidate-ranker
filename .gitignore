@@ -1,0 +1,12 @@
+# Ignore database datasets (too large for GitHub)
+candidates.jsonl
+sample_candidates.json
+
+# Ignore temporary files and OS metadata
+.DS_Store
+__pycache__/
+*.pyc
+~$*
+
+# Ignore presentation markdown source files if needed (optional)
+presentation/
