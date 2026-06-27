@@ -46,7 +46,8 @@ Any matching scores are rounded to exactly **4 decimal places** in Python. Ties 
 
 ```bash
 ├── rank.py                      # Core candidate ranking pipeline
-├── DevFusion.csv                # Final shortlist (Top 100 candidates)
+├── DevFusion.csv                # Final shortlist (Top 100 candidates) in CSV
+├── DevFusion.xlsx               # Final shortlist (Top 100 candidates) in Excel (XLSX)
 ├── DevFusion_Presentation.pptx  # Hackathon slide presentation (Redrob template)
 ├── submission_metadata.yaml    # Team and reproduction metadata
 ├── validate_submission.py      # Verification script
